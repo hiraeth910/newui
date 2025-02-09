@@ -1,0 +1,63 @@
+input[type="text"] {
+  width: 23vw; /* 23% of the viewport width for larger screens */
+  max-width: 500px; /* Limit the max width for desktop */
+  min-width: 90vw; /* On mobile, make it 90% of the screen width */
+  padding: 10px; /* Add some padding for better UI */
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  input[type="text"] {
+    width: 90vw; /* 90% of the viewport width on mobile */
+    max-width: 100%; /* Ensure it doesn't exceed the screen size */
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Styles for the file input button */
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+/* Styles for the image preview */
+.image-preview {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.preview-image {
+  max-height: 150px; /* Decreased height for preview */
+  width: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Loader styles */
+.loader {
+  color: #007bff;
+  font-weight: bold;
+  text-align: center;
+}

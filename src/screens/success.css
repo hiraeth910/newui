@@ -1,0 +1,106 @@
+.success{
+    width: 60vw;
+  background-color: #e7f3f9;
+  position: absolute;
+  height: 100vh;
+  left: 20%;
+  right: 20%;
+  top: 0;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  height: 100vh;
+  text-align: center;
+}
+.successimage{
+  height: 30vh;
+  margin-top: 20%;
+}
+@media (max-width: 768px) {
+.success{
+    width: 100vw;
+    left: 0;
+}
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.successImage {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.linkMessage {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.linkCard {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  overflow: hidden; /* Ensures content stays within card */
+  width: 100%; /* Card takes full width */
+}
+
+.responseLink {
+  color: black;
+  font-size: 1rem;
+  text-decoration: underline;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+  white-space: nowrap; /* Prevents wrapping */
+  overflow:inherit; /* Hides overflow */
+  text-overflow: ellipsis; /* Adds ellipsis (...) for overflowed text */
+  max-width: 70%; /* Limits width to prevent overflow into button */
+}
+
+.responseLink:hover {
+  color: #4CAF50; /* Change to green on hover */
+}
+
+.copyButton {
+  background-color: transparent;
+  border: none;
+  margin: 10 auto;
+  cursor: pointer;
+  color: #4CAF50;
+  font-size: 1.2rem;
+}
+
+.copyButton:hover {
+  color: #45a049;
+}
+.imageContainer img {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.imageContainer p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .responseLink {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    max-width: 60%; /* Further limit width to fit mobile screen */
+  }
+}
