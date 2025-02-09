@@ -29,6 +29,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   color: black;
+  align-items: center;
   background-color: rgb(227, 227, 227);
 }
 

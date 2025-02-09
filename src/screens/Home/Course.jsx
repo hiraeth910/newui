@@ -89,6 +89,9 @@ const adjustTextColor = (imgElement) => {
   const handleRefundPolicy = () => {
     navigate('/Refund-policy');
   };
+  const aboutus = () => {
+    navigate('/AboutUs');
+  };
   const confirmReplace = () => {
     dispatch(setCart(selectedCourse));
     setShowPopup(false);
@@ -104,13 +107,6 @@ const adjustTextColor = (imgElement) => {
     setShowCourseModal(false);
   };
 
-  const goToCart = () => {
-    if (cart) {
-      navigate('/c');
-    } else {
-      setShowCartPopup(true);
-    }
-  };
 
   const closeCartPopup = () => {
     setShowCartPopup(false);
@@ -168,6 +164,8 @@ const adjustTextColor = (imgElement) => {
         <span className="footer-link" onClick={handlePrivacyPolicy}>Privacy Policy</span>
         <span className="footer-link" onClick={handleContactUs}>Contact Us</span>
         <span className="footer-link" onClick={handleRefundPolicy}>Refund Policy</span>
+        <span className="footer-link" onClick={aboutus}>About us</span>
+
       </footer>
 
       {showPopup && (
@@ -209,7 +207,6 @@ const adjustTextColor = (imgElement) => {
         </div>
       )}
 
-      <div className="cart-icon" onClick={goToCart}>🛒</div>
 
       
     </div>

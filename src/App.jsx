@@ -15,6 +15,7 @@ import Courses from './screens/Home/Course';
 import InputScreen from './screens/InputScreen';
 import TransactionExtractor from './screens/TransactionExtractor';
 import PurchasePage from './screens/cart/purchase';
+import About from './screens/About';
 const App = () => {
   const dispatch = useDispatch();
 
@@ -35,6 +36,7 @@ const App = () => {
           path="/login" 
           element={isLoggedIn ? <Navigate to="/" /> : <LoginPage />} 
         />
+        <Route path="/AboutUs" element={<About />} />
         <Route path="/purchase/:id" element={<PurchasePage />} />
         <Route path='/getlink' element={<InputScreen/>}/>
         <Route path="/redirect-url" element={<Succes />} />

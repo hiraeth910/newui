@@ -74,7 +74,7 @@ const PurchasePage = () => {
   };
 
   return (
-    <div className="cart-page">
+    <div style={{height:'99vh'}} className="cart-page">
       <div className="cart-container">
         <h2>Download Your Purchase</h2>
 

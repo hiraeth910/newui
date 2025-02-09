@@ -183,9 +183,11 @@ window.location.replace(response.data.url)          // setShowModal(true); // Op
   </div>
 )}
 <footer className="footer">
-        <span className="footer-link" onClick={() => navigate('/terms&conditions')}>Terms and Conditions</span>
+        <span className="footer-link" onClick={() => navigate('/terms&conditions')}>Terms & Conditions</span>
         <span className="footer-link" onClick={() => navigate('/privacy-policy')}>Privacy Policy</span>
         <span className="footer-link" onClick={() => navigate('/contactus')}>Contact Us</span>
+                <span className="footer-link" onClick={() => navigate('/AboutUs')}>About us</span>
+
       </footer>
         </div>
       )}
